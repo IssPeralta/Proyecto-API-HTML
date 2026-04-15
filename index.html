@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Vehículos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar-top"></nav>
+    <header class="hero-header">
+        <div class="hero-overlay"><h1>GESTIÓN DE VEHÍCULOS</h1></div>
+    </header>
+    <main class="container">
+        <div class="admin-card">
+            <div class="card-header">ADMINISTRAR VEHÍCULOS</div>
+            <div class="card-body">
+                <div class="form-grid">
+                    <div class="input-group"><label>Placa</label><input type="text" id="placa" placeholder="ABC-123"></div>
+                    <div class="input-group"><label>Marca</label><input type="text" id="marca" placeholder="Toyota"></div>
+                    <div class="input-group"><label>Modelo</label><input type="text" id="modelo" placeholder="Corolla"></div>
+                </div>
+                <div class="actions">
+                    <button onclick="agregarVehiculo()" class="btn btn-save">Guardar</button>
+                    <button onclick="buscarVehiculo()" class="btn btn-search">Buscar</button>
+                    <button onclick="listarVehiculos()" class="btn btn-list">Listar Todos</button>
+                    <button onclick="eliminarVehiculo()" class="btn btn-delete">Eliminar</button>
+                </div>
+            </div>
+        </div>
+        <table id="tablaVehiculos"><tbody id="listaCuerpo"></tbody></table>
+    </main>
+    <script src="frontend.js"></script>
+</body>
+</html>
